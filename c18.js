@@ -2050,6 +2050,4 @@ for (let command of inputSplit) {
     let dist = parseInt(commandSplit[1]);
     move(dir, dist);
 }
-
-console.log(hPos, tPos);
-console.log(allPos, allPos.length)
+console.log(allPos.length)

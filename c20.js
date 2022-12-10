@@ -171,11 +171,10 @@ for (let command of inputSplit) {
     }
 }
 
-console.log(log)
 log = log.filter(e => Math.abs(e.after - (((e.cycle-1)%40)+1)) <= 1);
 console.log(log)
 let output = ``;
-for (let i = 0; i <= 239; i++) {
+for (let i = 0; i < 240; i++) {
     if ((i-1)%40 === 0 && i > 0) output += `\n`;
     if (log.filter(e => e.cycle === i).length > 0) output += '#';
     else output += '.';

@@ -2254,7 +2254,6 @@ let input = `10130
 6660`
 
 let theSplit = input.split(/\n\s*\n/).map(e => e.split(/\r?\n/));
-console.log(theSplit)
 let theSplitInt = theSplit.map(e => e.map(i => parseInt(i)));
 let sum = theSplitInt.map(e => e.reduce((a,b) => a+b,0));
-console.log(sum.sort((a,b)=>a-b).slice(-3));
+console.log(sum.sort((a,b)=>a-b).slice(-3).reduce((a,b) => a+b,0));

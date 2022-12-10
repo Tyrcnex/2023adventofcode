@@ -1074,7 +1074,6 @@ const recursiveDir = (obj) => {
 }
 
 recursiveDir(tree);
-console.log(JSON.stringify(tree, null, 4));
 
 let dirs = [];
 
@@ -1092,8 +1091,6 @@ const recursiveSum = (obj) => {
 }
 
 recursiveSum(tree);
-
-console.log(dirs)
 
 dirs = dirs.filter(e => 70000000 - tree.value + e.value > 30000000);
 

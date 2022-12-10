@@ -540,4 +540,4 @@ for (let i = 0; i < moveData.length; i++) {
     columns = playMove(columns, moveData[i][0], moveData[i][1], moveData[i][2]);
 }
 
-console.log(columns)
+console.log(columns.map(e => e[0]).join(''))

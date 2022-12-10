@@ -1003,8 +1003,6 @@ let inputSplit = input.split(/\r?\n/);
 let splitComma = inputSplit.map(e => e.split(',').map(e => e.split('-')));
 let v = 0;
 
-console.log(splitComma)
-
 splitComma.forEach(e => {
     let leftSmall = parseInt(e[0][0]) < parseInt(e[1][0]) && parseInt(e[0][1]) < parseInt(e[1][0]);
     let rightSmall = parseInt(e[1][0]) < parseInt(e[0][0]) && parseInt(e[1][1]) < parseInt(e[0][0]);

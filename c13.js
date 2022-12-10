@@ -1074,14 +1074,13 @@ const recursiveDir = (obj) => {
 }
 
 recursiveDir(tree);
-console.log(JSON.stringify(tree, null, 4));
 
 let finalSum = 0;
 
 const recursiveSum = (obj) => {
     let sum = 0;
     for (let prop in obj) {
-        if (obj[prop].value <= 100000 && Object.keys(obj[prop]).length > 1) { sum += obj[prop].value; console.log(prop + ', ' + obj[prop].value) }
+        if (obj[prop].value <= 100000 && Object.keys(obj[prop]).length > 1) { sum += obj[prop].value; }
 
         if (Object.keys(obj[prop]).length > 1) recursiveSum(obj[prop]);
     }

@@ -1,5 +1,4 @@
-let input = `
-10130
+let input = `10130
 9819
 4257
 8400
@@ -2252,8 +2251,7 @@ let input = `
 1109
 4265
 4980
-6660
-`
+6660`
 
 let theSplit = input.split(/\n\s*\n/).map(e => e.split(/\r?\n/));
 let theSplitInt = theSplit.map(e => e.map(i => parseInt(i)));
